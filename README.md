@@ -1,46 +1,45 @@
-# Astro Starter Kit: Basics
 
-```sh
-npm create astro@latest -- --template basics
-```
+# 🚀 Minimalist Print-Ready Resume 
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+A clean, minimalistic, ready to print resume website, where I show my professional experience, projects, certifications and education, built with [Astro](https://astro.build/).
 
-## 🚀 Project Structure
+<!-- ## 🥃 Preview
 
-Inside of your Astro project, you'll see the following folders and files:
+![Minismalist Resume Preview](https://github.com/) -->
 
-```text
-/
-├── public/
-│   └── favicon.svg
-├── src
-│   ├── assets
-│   │   └── astro.svg
-│   ├── components
-│   │   └── Welcome.astro
-│   ├── layouts
-│   │   └── Layout.astro
-│   └── pages
-│       └── index.astro
-└── package.json
-```
 
-To learn more about the folder structure of an Astro project, refer to [our guide on project structure](https://docs.astro.build/en/basics/project-structure/).
+## 🔥 Features
 
-## 🧞 Commands
+- ✅ Print-Ready
+- ✅ Multilanguage
+- ✅ 100 / 100 Ligthhouse score
+- ✅ SEO Optimized
+- ✅ Keyboard Commands
+- ✅ Web View Transitions
+- ✅ Customizable without code
+- ✅ Robots.txt
+- ✅ Sitemap
+- ⚒️ Dark Mode (Coming soon)
 
-All commands are run from the root of the project, from a terminal:
+<!-- ## ⚓ Lighthouse Score 100/100
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+![Lighthouse score](https://github.com/) -->
 
-## 👀 Want to learn more?
+## 🚀 Getting Started
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+Clone this repository to your local machine using Git.
+
+| Command        | Action                                       |
+| :------------- | :------------------------------------------- |
+| `pnpm install` | Installs dependencies                        |
+| `pnpm dev`     | Starts local dev server at `localhost:4321`  |
+| `pnpm build`   | Build your production site to `./dist/`      |
+| `pnpm preview` | Preview your build locally, before deploying at `localhost:4321` |
+
+## ✨ Credits & Thanks
+
+Inspired by [Bartosz Jarocki](https://github.com/BartoszJarocki) design and [Midudev](https://github.com/midudev) youtube video.
+ 
+## 📃 License
+
+This project is licensed under the MIT License. See the `LICENSE` file for details.

@@ -1,0 +1,272 @@
+{
+  "basics": {
+    "name": "Mateo Jonás Medran",
+    "label": "Full Stack Developer with more than 4 years of experience with .NET and Angular",
+    "image": "/me.webp",
+    "email": "medranmateo@gmail.com",
+    "phone": "https://wa.me/5493516438271",
+    "url": "#",
+    "summary": "Passionate about programming and software development, with more than 4 years of experience in .NET and Angular. With a solid command of C#, Blazor, Docker, JavaScript, TypeScript, Node.Js, and knowledge of data management with SQL Server, MySQL, PostgreSQL, and MogoDB. I love learning new technologies and sharing my knowledge with the community. I currently reside in Córdoba, Argentina.",
+    "location": {
+      "address": "",
+      "postalCode": "5016",
+      "city": "Cordova",
+      "countryCode": "AR",
+      "region": "Argentina"
+    },
+    "profiles": [
+      {
+        "network": "LinkedIn",
+        "username": "mateomedran",
+        "url": "https://www.linkedin.com/in/mateo-jonas-medran/"
+      },
+      {
+        "network": "X",
+        "username": "mateomedran",
+        "url": "https://x.com/mateomedran"
+      },
+      {
+        "network": "GitHub",
+        "username": "mateomedran",
+        "url": "https://github.com/medranmateo"
+      }
+    ]
+  },
+  "work": [
+    {
+      "name": "FULL STACK DEVELOPER CONTRACTOR",
+      "position": " - ",
+      "url": "#",
+      "startDate": "2022-01-05",
+      "endDate": null,
+      "summary": "Full-stack developer with experience in .NET and Angular, working as a contractor for various companies such as Ultrix Labs, the Automobile Registry, among others. I have participated in software development projects, implementing efficient and scalable solutions with a focus on continuous improvement. Working on the creation of web applications and backend services, using technologies such as C#, Blazor, Docker, JavaScript, TypeScript, Node.Js, and managing databases with SQL Server, MySQL, PostgreSQL, and MongoDB. Integrating existing systems and building new functionalities in production environments.",
+      "highlights": [
+        "Started the company"
+      ]
+    },
+    {
+      "name": ".NET DEVELOPER ANALYST - Angular",
+      "position": "MusiMundo/On City",
+      "url": "https://www.oncity.com/",
+      "startDate": "2022-06-22",
+      "endDate": "2025-07-18",
+      "summary": "Participated in the analysis and development of .NET and Angular-based web solutions using a microservices architecture. Developed and maintained Web APIs for the sales department using .NET Core and Entity Framework. Implemented integration solutions with external systems using technologies such as RabbitMQ and Docker. Developed web applications with Angular, ensuring a smooth and efficient user experience. Worked as part of a team using the agile Scrum methodology, collaborating with multiple functional areas. Managed relational databases (SQL Server) and implemented version control with TFS.",
+      "highlights": [
+        "Started the company"
+      ]
+    },
+    {
+      "name": ".NET FULL STACK DEVELOPER - Angular",
+      "position": "Encode",
+      "url": "https://www.encodesa.com.ar/",
+      "startDate": "2011-03-01",
+      "endDate": "2016-05-01",
+      "summary": "Teamwork for the development and deployment of web-based software for document management, including the ability to digitally sign documents. It was built with Angular for the front-end, .NET for the back-end, and a SQL database. The system was capable of sending and receiving documents in real time thanks to the implementation of WebSockets, allowing efficient two-way communication between the server and clients. Implementation of a user and role management system, ensuring security and access control to the software's functionalities. Development of a real-time notification system to alert users of important events, such as the arrival of new documents or changes in their status.",
+      "highlights": [
+        "Started the company"
+      ]
+    }
+  ],
+  "volunteer": [
+    {
+      "organization": "Organization",
+      "position": "Volunteer",
+      "url": "https://organization.com/",
+      "startDate": "2012-01-01",
+      "endDate": "2013-01-01",
+      "summary": "Description…",
+      "highlights": [
+        "Awarded 'Volunteer of the Month'"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "Universidad Tecnológica Nacional",
+      "url": "https://www.frc.utn.edu.ar/",
+      "area": "Information Systems Engineering",
+      "studyType": "Bachelor",
+      "startDate": "2003-01-01",
+      "endDate": "2009-01-01",
+      "score": "4.0",
+      "courses": [
+        "DB1101 - Basic SQL"
+      ]
+    }
+  ],
+  "awards": [
+    {
+      "title": "Award",
+      "date": "2014-11-01",
+      "awarder": "Company",
+      "summary": "There is no spoon."
+    }
+  ],
+  "certificates": [
+    {
+      "name": "Certificate",
+      "date": "2021-11-07",
+      "issuer": "Company",
+      "url": "https://certificate.com"
+    }
+  ],
+  "publications": [
+    {
+      "name": "Publication",
+      "publisher": "Company",
+      "releaseDate": "2014-10-01",
+      "url": "https://publication.com",
+      "summary": "Description…"
+    }
+  ],
+  "skills": [
+    {
+      "name": "HTML",
+      "level": "Master",
+      "keywords": [
+        "Web development",
+        "Frontend"
+      ]
+    },
+    {
+      "name": "CSS",
+      "level": "Master",
+      "keywords": [
+        "Web development",
+        "Frontend",
+        "Diseño Responsive"
+      ]
+    },
+    {
+      "name": "JavaScript",
+      "level": "Master",
+      "keywords": [
+        "Web development",
+        "Frontend",
+        "Backend",
+        "Fullstack"
+      ]
+    },
+    {
+      "name": "Tailwind",
+      "level": "Advanced",
+      "keywords": [
+        "Web development",
+        "Frontend",
+        "CSS Framework",
+        "Diseño Responsive"
+      ]
+    },
+    {
+      "name": "TypeScript",
+      "level": "Advanced",
+      "keywords": [
+        "Web development",
+        "Frontend",
+        "Backend",
+        "JavaScript Superset"
+      ]
+    },
+    {
+      "name": "Node",
+      "level": "Advanced",
+      "keywords": [
+        "Web development",
+        "Backend",
+        "JavaScript",
+        "Servidor"
+      ]
+    },
+    {
+      "name": "MySQL",
+      "level": "Advanced",
+      "keywords": [
+        "Bases de Datos",
+        "SQL",
+        "Database",
+        "Backend"
+      ]
+    },
+    {
+      "name": "Git",
+      "level": "Advanced",
+      "keywords": [
+        "Version control",
+        "Colaboración",
+        "Source code"
+      ]
+    },
+    {
+      "name": "GitHub",
+      "level": "Advanced",
+      "keywords": [
+        "Version control",
+        "Collaboration",
+        "Source code",
+        "Git"
+      ]
+    },
+    {
+      "name": "Next.js",
+      "level": "Advanced",
+      "keywords": [
+        "Web development",
+        "Frontend",
+        "React Framework",
+        "SSR",
+        "Static Generation"
+      ]
+    },
+    {
+      "name": "React",
+      "level": "Advanced",
+      "keywords": [
+        "Web development",
+        "Frontend",
+        "JavaScript Library",
+        "UI"
+      ]
+    }
+  ],
+  "languages": [
+    {
+      "language": "Spanish",
+      "fluency": "Native speaker"
+    },
+    {
+      "language": "English",
+      "fluency": "Advanced"
+    }
+  ],
+  "interests": [
+    {
+      "name": "Wildlife",
+      "keywords": [
+        "Ferrets",
+        "Unicorns"
+      ]
+    }
+  ],
+  "references": [
+    {
+      "name": "Jane Doe",
+      "reference": "Reference…"
+    }
+  ],
+  "projects": [
+    {
+      "name": "CBA 360",
+      "isActive": true,
+      "description": "News site from Córdoba, Argentina. With over 100,000 visits per month.",
+      "highlights": [
+        "Angular",
+        "Node.js",
+        "MongoDB",
+        "Docker",
+        "Microservices"
+      ],
+      "url": "#",
+      "github": "https://github.com/medranmateo/CBA-360-Client"
+    }
+  ]
+}
