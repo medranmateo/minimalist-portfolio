@@ -1,12 +1,19 @@
 ---
-import Section from "../Section.astro"
+import type { Resume } from '@/content/config';
 
-import { basics } from "@cv"
-const { summary } = basics
+const { data } = Astro.props;
+const { basics } = data as Resume;
+const { summary } = basics;
 ---
 
-<Section title="Sobre mí">
-  <p>
-    {summary}
-  </p>
-</Section>
+<article>
+  {summary.map(({ paragraph }) => <p>{paragraph}</p>)}
+</article>
+
+<style>
+  article {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+</style>

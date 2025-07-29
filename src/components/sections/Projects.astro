@@ -1,62 +1,86 @@
 ---
-import GitHub from "@/icons/GitHub.astro"
-import Section from "../Section.astro"
+import type { Resume } from '@/content/config';
+import { getLangFromUrl, useTranslations } from '@/i18n/utils';
+import GitHub from '@/icons/GitHub.astro';
 
-import { projects } from "@cv"
+const { data } = Astro.props;
+const { projects } = data as Resume;
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
 ---
 
-<Section title="Proyectos">
-  <ul>
-    {
-      projects.map(
-        ({ url, description, highlights, name, isActive, github }) => {
-          return (
-            <li>
-              <article>
-                <header>
-                  <h3>
-                    <a href={url} target="_blank" title={`Ver el proyecto ${name}`}>
-                      {name}
-                    </a>
-                    {isActive && <span>•</span>}
-                    {github && (
-                      <a
-                        class="github-code-link"
-                        href={github}
-                        target="_blank"
-                        title={`Ver código fuente del proyecto ${name}`}
-                      >
-                        <GitHub />
-                      </a>
-                    )}
-                  </h3>
-                  <p>{description}</p>
-                </header>
-                <footer>
-                  {highlights.map((highlight) => {
-                    return <span>{highlight}</span>
-                  })}
-                </footer>
-              </article>
-            </li>
-          )
-        }
-      )
-    }
-  </ul>
-</Section>
+<ul>
+  {
+    projects.map(({ url, description, highlights, name, isActive, github }) => (
+      <li>
+        <article>
+          <header>
+            <h3>
+              <a
+                href={url}
+                title={`${t('projects.link')} ${name}`}
+                target='_blank'>
+                {name}
+              </a>
+              {isActive && <span>&bull;</span>}
+              {github && (
+                <a
+                  class='github-code-link'
+                  href={github}
+                  target='_blank'
+                  title={`${t('projects.sourceCode')} ${name}${t('projects.sourceCodeFollowing')}`}>
+                  <GitHub />
+                </a>
+              )}
+            </h3>
+            <p>{description}</p>
+          </header>
+          <footer>
+            {highlights.map((highlight) => (
+              <span>{highlight}</span>
+            ))}
+          </footer>
+        </article>
+      </li>
+    ))
+  }
+</ul>
 
 <style>
+  .github-code-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 13px;
+    width: 13px;
+    transition: all 0.2s ease;
+    margin-left: 4px;
+  }
+
+  .github-code-link:hover {
+    transform: scale(1.1);
+  }
+
   ul {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     gap: 1rem;
     margin-inline: -16px;
   }
 
+  @keyframes pulse {
+    0%,
+    100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0.5;
+    }
+  }
+
   article {
     border-radius: 8px;
-    border: 1px solid #f2f2f2;
+    border: 1px solid var(--projects-background);
     gap: 16px;
     display: flex;
     flex-direction: column;
@@ -70,28 +94,27 @@ import { projects } from "@cv"
 
   article h3 {
     margin-bottom: 4px;
+    font-weight: 600;
   }
 
-  article a {
-    color: #111;
-  }
-
-  article a:hover {
-    text-decoration: underline;
+  article h3 span {
+    color: var(--projects-active);
+    animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+    margin-left: 2px;
   }
 
   article p {
     font-size: 0.75rem;
     line-height: 1.2rem;
-    margin-bottom: 4px;
+    margin-bottom: 8px;
   }
 
-  article h3 span {
-    color: rgb(0, 188, 47);
-    animation-name: flicker;
-    animation-duration: 3s;
-    animation-timing-function: ease-in;
-    animation-iteration-count: infinite;
+  article a {
+    color: var(--black-text);
+  }
+
+  article a:hover {
+    text-decoration: underline;
   }
 
   footer {
@@ -103,44 +126,10 @@ import { projects } from "@cv"
 
   footer span {
     border-radius: 6px;
-    background: #eee;
-    color: #444;
+    background: var(--hover-background);
+    color: var(--secondary-text);
     font-size: 0.6rem;
     font-weight: 500;
     padding: 0.2rem 0.6rem;
-  }
-
-  .github-code-link {
-    margin-left: 5px;
-  }
-
-  @keyframes flicker {
-    0% {
-      opacity: 1;
-    }
-    50% {
-      opacity: 0.25;
-    }
-    100% {
-      opacity: 1;
-    }
-  }
-
-  @media (width <= 700px) {
-    ul {
-      margin-inline: 0px;
-    }
-
-    article {
-      border: none;
-      box-shadow: 0 1px 1px #f2f2f2;
-      padding: 0 0 16px 0;
-    }
-  }
-
-  @media print {
-    article h3 span {
-      animation-name: none;
-    }
   }
 </style>

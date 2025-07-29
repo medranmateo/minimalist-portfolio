@@ -2,12 +2,12 @@
 import type { Resume } from '@/content/config';
 
 const { data } = Astro.props;
-const { skills } = data as Resume;
+const { softskills } = data as Resume;
 ---
 
 <ul>
   {
-    skills.map(({ name }) => (
+    softskills.map(({ name }) => (
       <li>
         <span>{name}</span>
       </li>
@@ -31,4 +31,3 @@ const { skills } = data as Resume;
     padding: 0.2rem 0.6rem;
   }
 </style>
-

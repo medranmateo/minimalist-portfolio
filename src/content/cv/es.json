@@ -1,12 +1,14 @@
 {
   "basics": {
     "name": "Mateo Jonás Medran",
-    "label": "Full Stack Developer con más de 4 años de experiencia con .NET y Angular",
+    "label": "Desarrollador Full Stack con más de 4 años de experiencia con .NET y Angular",
     "image": "/me.webp",
     "email": "medranmateo@gmail.com",
     "phone": "https://wa.me/5493516438271",
     "url": "#",
-    "summary": "Apasionado por la programación y el desarrollo de software, con más de 4 años de experiencia en .NET y Angular. Con solido manejo de C#, Blazor, Docker, JavaScript, TypeScript, Node.Js y conocimientos en gestion de datos con SQL Server, MySQL, PostgreSQL, MogoDB. Me encanta aprender nuevas tecnologías y compartir mis conocimientos con la comunidad. Actualmente resido en Córdoba, Argentina.",
+    "summary": [{
+        "paragraph": "Apasionado por la tecnología y el desarrollo de software, con más de 4 años de experiencia en .NET y Angular. Con solido manejo de C#, Blazor, Docker, JavaScript, TypeScript, Node.Js y conocimientos en gestion de datos con SQL Server, MySQL, PostgreSQL, MogoDB. Me encanta aprender nuevas tecnologías y compartir mis conocimientos con la comunidad. Actualmente resido en Córdoba, Argentina."
+      }],
     "location": {
       "address": "",
       "postalCode": "5016",
@@ -37,7 +39,7 @@
       "name": "DESARROLLADOR FULL STACK CONTRACTOR",
       "position": " - ",
       "url": "#",
-      "startDate": "2022-01-05",
+      "startDate": "2024-05-05",
       "endDate": null,
       "summary": "Desarrollador Full Stack con experiencia en .NET y Angular, trabajando como contractor para diversas empresas como Ultrix Labs, Registro del automotor, entre otros. He participado en proyectos de desarrollo de software, implementando soluciones eficientes y escalables con foco en la mejora continua. Trabajando en la creación de aplicaciones web y servicios backend, utilizando tecnologías como C#, Blazor, Docker, JavaScript, TypeScript, Node.Js y gestionando bases de datos con SQL Server, MySQL, PostgreSQL y MongoDB. Integración de sistemas existentes y construcción de nuevas funcionalidades en entornos productivos.",
       "highlights": [
@@ -59,56 +61,22 @@
       "name": "DESARROLLADOR FULL STACK .NET - Angular",
       "position": "Encode",
       "url": "https://www.encodesa.com.ar/",
-      "startDate": "2011-03-01",
-      "endDate": "2016-05-01",
+      "startDate": "2021-08-04",
+      "endDate": "2022-06-22",
       "summary": "Trabajo en Equipo para el desarrollo y despliegue de un Software web encargado de gestionar documentos, incluyendo la posibilidad de firmar digitalmente. Fue construido con Angular para el Front-end, .NET en el Back-End y base de datos SQL El sistema era capaz de enviar y recibir documentos en tiempo real gracias a la implementación de WebSockets, lo que permitía una comunicación bidireccional eficiente entre el servidor y los clientes. Implementación de un sistema de gestión de usuarios y roles, asegurando la seguridad y el control de acceso a las funcionalidades del software. Desarrollo de un sistema de notificaciones en tiempo real para alertar a los usuarios sobre eventos importantes, como la llegada de nuevos documentos o cambios en el estado de los mismos.",
       "highlights": [
         "Started the company"
       ]
     }
   ],
-  "volunteer": [{
-    "organization": "Organization",
-    "position": "Volunteer",
-    "url": "https://organization.com/",
-    "startDate": "2012-01-01",
-    "endDate": "2013-01-01",
-    "summary": "Description…",
-    "highlights": [
-      "Awarded 'Volunteer of the Month'"
-    ]
-  }],
   "education": [{
     "institution": "Universidad Tecnológica Nacional",
     "url": "https://www.frc.utn.edu.ar/",
     "area": "Ingeniería en Sistemas de Información",
-    "studyType": "Bachelor",
-    "startDate": "2019-03-01",
-    "endDate": null,
-    "score": "4.0",
-    "courses": [
-      "DB1101 - Basic SQL"
-    ]
+    "startDate": "2019-03-18",
+    "endDate": null
   }],
-  "awards": [{
-    "title": "Award",
-    "date": "2014-11-01",
-    "awarder": "Company",
-    "summary": "There is no spoon."
-  }],
-  "certificates": [{
-    "name": "Certificate",
-    "date": "2021-11-07",
-    "issuer": "Company",
-    "url": "https://certificate.com"
-  }],
-  "publications": [{
-    "name": "Publication",
-    "publisher": "Company",
-    "releaseDate": "2014-10-01",
-    "url": "https://publication.com",
-    "summary": "Description…"
-  }],
+  "certificates": [],
   "skills": [
     {
       "name": "HTML",
@@ -223,27 +191,7 @@
       ]
     }
   ],
-  "languages": [
-    {
-      "language": "Spanish",
-      "fluency": "Native speaker"
-    },
-    {
-      "language": "English",
-      "fluency": "Advanced"
-    }
-  ],
-  "interests": [{
-    "name": "Wildlife",
-    "keywords": [
-      "Ferrets",
-      "Unicorns"
-    ]
-  }],
-  "references": [{
-    "name": "Jane Doe",
-    "reference": "Reference…"
-  }],
+  "softskills": [],
   "projects": [
     {
       "name": "CBA 360",
@@ -256,7 +204,7 @@
         "Docker",
         "Microservicios"
       ],
-      "url": "#",
+      "url": "https://www.allworship.com/wp-content/uploads/2023/08/bigstock-Work-In-Progress-Concept-73569091-768x699.jpg",
       "github": "https://github.com/medranmateo/CBA-360-Cliente"
     }
   ]

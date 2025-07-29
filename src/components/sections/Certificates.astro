@@ -3,38 +3,37 @@ import type { Resume } from '@/content/config';
 import { getLangFromUrl, useTranslations } from '@/i18n/utils';
 
 const { data } = Astro.props;
-const { education } = data as Resume;
-const lang = getLangFromUrl(Astro.url);
+const { certificates } = data as Resume;
+const lang = getLangFromUrl(Astro.url)
 const t = useTranslations(lang);
 ---
 
 <ul>
   {
-    education.map(({ startDate, endDate, institution, area }) => {
-      const startDateString = new Date(startDate).toLocaleDateString('en-US', {
+    certificates.map(({date, name,url, organization }) => {
+      const dateString = new Date(date).toLocaleDateString('en-US', {
         month: 'short',
         year: 'numeric',
       });
-      const endDateString = endDate
-        ? new Date(endDate).toLocaleDateString('en-US', {
-            month: 'short',
-            year: 'numeric',
-          })
-        : t('currentDateString');
+      
       return (
         <li>
           <article>
             <header>
               <div>
-                <h3>{institution}</h3>
+                <a href={url} title={`${t('certificates.link')} ${name}`}
+              target='_blank'
+              rel='noopener noreferrer'>
+                  <h3>{name}</h3>
+                </a>
               </div>
               <time>
-                {startDateString} - {endDateString}
+                {dateString}
               </time>
             </header>
             <footer>
               {' '}
-              <p>{area}</p>
+              <p>{organization}</p>
             </footer>
           </article>
         </li>
@@ -52,8 +51,17 @@ const t = useTranslations(lang);
 
   article h3 {
     font-weight: 600;
-    font-size: 1rem;
+    font-size: 1rem
+    color: #111;
+  }
+  
+  a{
+    text-decoration: none;
     color: var(--black-text);
+  }
+
+  a:hover {
+    text-decoration: underline;
   }
 
   article h4 {
@@ -74,10 +82,12 @@ const t = useTranslations(lang);
     color: var(--darker-primary-text);
   }
 
-  @media (max-width: 500px) {
-    header {
-      flex-direction: column;
-      gap: 4px;
-    }
+  
+@media (max-width: 500px) {
+  
+  header {
+    flex-direction: column;
+    gap: 4px;
   }
+}
 </style>

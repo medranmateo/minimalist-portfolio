@@ -1,59 +1,73 @@
 ---
-import Section from "../Section.astro"
+import type { Resume } from '@/content/config';
+import { getLangFromUrl, useTranslations } from '@/i18n/utils';
 
-import { work } from "@cv"
+const { data } = Astro.props;
+const { work } = data as Resume;
+const lang = getLangFromUrl(Astro.url)
+const t = useTranslations(lang)
 ---
 
-<Section title="Experiencia laboral">
-  <ul>
-    {
-      work.map(
-        ({ name, startDate, endDate, position, summary, highlights, url }) => {
-          const startYear = new Date(startDate).getFullYear()
-          const endYear =
-            endDate != null ? new Date(endDate).getFullYear() : "Actual"
-
-          return (
-            <li>
-              <article>
-                <header>
-                  <div>
-                    <h3>
-                      <a href={url} title={`Ver ${name}`} target="_blank">
-                        {name}
-                      </a>
-                    </h3>
-                    <h4>{position}</h4>
-                  </div>
-
-                  <div>
-                    <time 
-                      datetime={startDate}
-                      data-title={startDate}>
-                        {startYear}
-                    </time>
-                    {" - "}
-                    <time 
-                      datetime={endDate}
-                      data-title={endDate}>
-                        {endYear}
-                    </time>
-                  </div>
-                </header>
-
-                <footer>
-                  <p>{summary}</p>
-                </footer>
-              </article>
-            </li>
-          )
-        }
-      )
-    }
-  </ul>
-</Section>
+<ul>
+  {
+    work.map(({ name, startDate, endDate, position, summary, isRemote }) => {
+      const startDateString = new Date(startDate).toLocaleDateString('en-US', {
+        month: 'short',
+        year: 'numeric',
+      });
+      const endDateString = endDate
+        ? new Date(endDate).toLocaleDateString('en-US', {
+            month: 'short',
+            year: 'numeric',
+          })
+        : t('currentDateString');
+      return (
+        <li>
+          <article>
+            <header>
+              <div>
+                <div class="name">
+                <h3>{name}</h3>
+                {isRemote && <span class="tag">{t('remoteString')}</span>}  
+                </div>
+                <h4>{position}</h4>
+              </div>
+              <time>
+                {startDateString} - {endDateString}
+              </time>
+            </header>
+            <footer>
+              {' '}
+              <p>{summary}</p>
+            </footer>
+          </article>
+        </li>
+      );
+    })
+  }
+</ul>
 
 <style>
+
+  
+
+  .name {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 8px;
+    color: var(--black-text); 
+  }
+
+  .tag {
+    border-radius: 6px;
+    background-color: var(--hover-background);
+    color: var(--black-text);
+    font-size: 0.75rem;
+    font-weight: 500;
+    padding: 0.2rem 0.6rem
+  }
+
   ul {
     display: flex;
     flex-direction: column;
@@ -61,69 +75,34 @@ import { work } from "@cv"
   }
 
   article h3 {
-    font-weight: 500;
-    color: #111;
-  }
-
-  article a {
-    color: #111;
-  }
-
-  article a:hover {
-    text-decoration: underline;
+    font-weight: 600;
+    font-size: 1rem
+    color: var(--black-text);
   }
 
   article h4 {
-    color: #222;
-    font-weight: 400;
+    font-weight: 500;
+    font-size: 0.9rem;
+    color: var(--black-text);
   }
 
   header {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    margin-bottom: 4px;
+    margin-bottom: 8px;
   }
 
   time {
-    color: #555;
     font-size: 0.85rem;
-    min-width: 102px;
-    cursor: default;
+    color: var(--darker-primary-text);
   }
 
-  [data-title]:hover:after {
-    opacity: 1;
-    transition: all 0.1s ease-in-out 0.5s;
-    visibility: visible;
+@media (max-width: 500px) {
+  
+  header {
+    flex-direction: column;
+    gap: 4px;
   }
-
-  [data-title]:after {
-    content: attr(data-title);
-    background-color: #333;
-    color: #fff;
-    font-size: .75rem;
-    font-family: Menlo, Monaco, Lucida Console, "Courier New", monospace;;
-    position: absolute;
-    padding: .2rem .5rem;
-    bottom: -1.4rem;
-    left: 50%;
-    white-space: nowrap;
-    box-shadow: 1px 1px 1px #222222;
-    opacity: 0;
-    border: 1px solid #111111;
-    z-index: 99999;
-    visibility: hidden;
-    border-radius: 6px;
-  }
-
-  [data-title] {
-    position: relative;
-  }
-
-  @media (width <= 700px) {
-    time {
-      text-align: right;
-    }
-  }
+}
 </style>
