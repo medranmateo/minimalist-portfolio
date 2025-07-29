@@ -3,9 +3,9 @@
 
 A clean, minimalistic, ready to print resume website, where I show my professional experience, projects, certifications and education, built with [Astro](https://astro.build/).
 
-<!-- ## 🥃 Preview
+## 🥃 Preview
 
-![Minismalist Resume Preview](https://github.com/) -->
+![Minismalist Resume Preview](https://github.com/medranmateo/minimalist-portfolio/blob/main/portada.png)
 
 
 ## 🔥 Features
