@@ -1,6 +1,6 @@
 {
   "basics": {
-     "name": "Mateo Jonás Medran",
+    "name": "Mateo Jonás Medran",
     "label": "Full Stack Developer with more than 4 years of experience with .NET and Angular",
     "image": "/me.webp",
     "email": "medranmateo@gmail.com",
@@ -36,7 +36,7 @@
       }
     ]
   },
-   "work": [
+  "work": [
     {
       "name": "FULL STACK DEVELOPER CONTRACTOR",
       "position": " - ",
@@ -49,7 +49,7 @@
       ]
     },
     {
-      "name": ".NET DEVELOPER ANALYST - Angular",
+      "name": ".NET - Angular DEVELOPER ANALYST",
       "position": "MusiMundo/On City",
       "url": "https://www.oncity.com/",
       "startDate": "2022-06-22",
@@ -60,7 +60,7 @@
       ]
     },
     {
-      "name": ".NET FULL STACK DEVELOPER - Angular",
+      "name": ".NET - Angular DEVELOPER",
       "position": "Encode",
       "url": "https://www.encodesa.com.ar/",
       "startDate": "2011-03-01",
@@ -71,129 +71,170 @@
       ]
     }
   ],
-  "education": [{
-    "institution": "Universidad Tecnológica Nacional",
-    "url": "https://www.frc.utn.edu.ar/",
-    "area": "Information Systems Engineering",
-    "startDate": "2019-03-01",
-    "endDate": null
-  }],
+  "education": [
+    {
+      "institution": "Universidad Tecnológica Nacional",
+      "url": "https://www.frc.utn.edu.ar/",
+      "area": "Information Systems Engineering",
+      "startDate": "2019-03-01",
+      "endDate": null
+    }
+  ],
   "certificates": [],
   "skills": [
     {
       "name": "HTML",
       "level": "Master",
       "keywords": [
-        "Desarrollo Web", "Frontend"
+        "Desarrollo Web",
+        "Frontend"
       ]
     },
     {
       "name": "CSS",
       "level": "Master",
       "keywords": [
-        "Desarrollo Web", "Frontend", "Diseño Responsive"
+        "Desarrollo Web",
+        "Frontend",
+        "Diseño Responsive"
       ]
     },
     {
       "name": "JavaScript",
       "level": "Master",
       "keywords": [
-        "Desarrollo Web", "Frontend", "Backend", "Fullstack"
+        "Desarrollo Web",
+        "Frontend",
+        "Backend",
+        "Fullstack"
       ]
     },
     {
       "name": "TypeScript",
       "level": "Avanzado",
       "keywords": [
-        "Desarrollo Web", "Frontend", "Backend", "JavaScript Superset"
+        "Desarrollo Web",
+        "Frontend",
+        "Backend",
+        "JavaScript Superset"
       ]
     },
     {
       "name": "Node",
       "level": "Avanzado",
       "keywords": [
-        "Desarrollo Web", "Backend", "JavaScript", "Servidor"
+        "Desarrollo Web",
+        "Backend",
+        "JavaScript",
+        "Servidor"
       ]
     },
     {
       "name": "MySQL",
       "level": "Avanzado",
       "keywords": [
-        "Bases de Datos", "SQL", "Almacenamiento de Datos", "Backend"
+        "Bases de Datos",
+        "SQL",
+        "Almacenamiento de Datos",
+        "Backend"
       ]
     },
     {
       "name": "Git",
       "level": "Avanzado",
       "keywords": [
-        "Control de Versiones", "Colaboración", "Código Fuente"
+        "Control de Versiones",
+        "Colaboración",
+        "Código Fuente"
       ]
     },
     {
       "name": "GitHub",
       "level": "Avanzado",
       "keywords": [
-        "Control de Versiones", "Colaboración", "Código Fuente", "Git"
+        "Control de Versiones",
+        "Colaboración",
+        "Código Fuente",
+        "Git"
       ]
     },
     {
       "name": "Docker",
       "level": "Avanzado",
       "keywords": [
-        "Contenedores", "Despliegue", "DevOps"
+        "Contenedores",
+        "Despliegue",
+        "DevOps"
       ]
     },
     {
       "name": "Blazor",
       "level": "Intermedio",
       "keywords": [
-        "Desarrollo Web", "Frontend", "C#"
+        "Desarrollo Web",
+        "Frontend",
+        "C#"
       ]
     },
     {
       "name": "Angular",
       "level": "Intermedio",
       "keywords": [
-        "Desarrollo Web", "Frontend", "JavaScript Framework"
+        "Desarrollo Web",
+        "Frontend",
+        "JavaScript Framework"
       ]
     },
     {
       "name": "SQL Server",
       "level": "Intermedio",
       "keywords": [
-        "Bases de Datos", "SQL", "Almacenamiento de Datos", "Backend"
+        "Bases de Datos",
+        "SQL",
+        "Almacenamiento de Datos",
+        "Backend"
       ]
     },
     {
       "name": "PostgreSQL",
       "level": "Intermedio",
       "keywords": [
-        "Bases de Datos", "SQL", "Almacenamiento de Datos", "Backend"
+        "Bases de Datos",
+        "SQL",
+        "Almacenamiento de Datos",
+        "Backend"
       ]
     },
     {
       "name": "MongoDB",
       "level": "Intermedio",
       "keywords": [
-        "Bases de Datos NoSQL", "Almacenamiento de Datos", "Backend"
+        "Bases de Datos NoSQL",
+        "Almacenamiento de Datos",
+        "Backend"
       ]
     },
     {
       "name": "RabbitMQ",
       "level": "Intermedio",
       "keywords": [
-        "Mensajería", "Integración de Sistemas", "Backend"
+        "Mensajería",
+        "Integración de Sistemas",
+        "Backend"
       ]
     },
     {
       "name": "Csharp",
       "level": "Intermedio",
       "keywords": [
-        "Metodología Ágil", "Gestión de Proyectos", "Colaboración"
+        "Metodología Ágil",
+        "Gestión de Proyectos",
+        "Colaboración"
       ]
-    }],
+    }
+  ],
   "softskills": [],
- "projects": [
+  "projects": [
     {
       "name": "CBA 360",
       "isActive": true,
