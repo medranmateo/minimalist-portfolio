@@ -234,20 +234,5 @@
     }
   ],
   "softskills": [],
-  "projects": [
-    {
-      "name": "CBA 360",
-      "isActive": true,
-      "description": "News site from Córdoba, Argentina. With over 100,000 visits per month.",
-      "highlights": [
-        "Angular",
-        "Node.js",
-        "MongoDB",
-        "Docker",
-        "Microservices"
-      ],
-      "url": "https://www.allworship.com/wp-content/uploads/2023/08/bigstock-Work-In-Progress-Concept-73569091-768x699.jpg",
-      "github": "https://github.com/medranmateo/CBA-360-Client"
-    }
-  ]
+  "projects": []
 }
